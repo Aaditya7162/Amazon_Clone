@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Navbar</title>
+</head>
+<body>
+    <header class="amazon-header">
+        <nav class="nav-top">
+            <div class="nav-item nav-logo border-hover">
+                <div class="logo-placeholder">
+                    <img src="{% static "images/homeicon.png" %}" height="80%" width="100%">
+                </div>
+            </div>
+
+            <div class="nav-item nav-location border-hover">
+                <div class="location-icon">
+                    <img src="{% static "images/location.png" %}" width="35vm">
+                </div>
+                <div class="location-text">
+                    <span class="text-light">Delivering to Sonipat 131001</span>
+                    <span class="text-bold">Update location</span>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <div class="search-dropdown">
+                    <select class="search-select">
+                        <option value="search-alias=All">All</option>
+                        <option value="search-alias=alexa-skills">Alexa Skills</option>
+                        <option value="search-alias=amazon-devices">Amazon Devices</option>
+                        <option value="search-alias=fashion">Amazon Fashion</option>
+                        <option value="search-alias=amazon-fresh">Amazon Fresh</option>
+                        <option value="search-alias=amazon-pharmacy">Amazon Pharmacy</option>
+                        <option value="search-alias=appliances">Appliances</option>
+                        <option value="search-alias=mobile-apps">Apps & Games</option>
+                        <option value="search-alias=audible">Audible Audiobooks</option>
+                        <option value="search-alias=baby">Baby</option>
+                        <option value="search-alias=beauty">Beauty</option>
+                        <option value="search-alias=stripbooks">Books</option>
+                        <option value="search-alias=automotive">Car & Motorbike</option>
+                        <option value="search-alias=apparel">Clothing & Accessories</option>
+                        <option value="search-alias=collectibles">Collectibles</option>
+                        <option value="search-alias=computers">Computers & Accessories</option>
+                        <option value="search-alias=todays-deals">Deals</option>
+                        <option value="search-alias=electronics">Electronics</option>
+                        <option value="search-alias=furniture">Furniture</option>
+                        <option value="search-alias=lawn-garden">Garden & Outdoors</option>
+                        <option value="search-alias=gift-cards">Gift Cards</option>
+                        <option value="search-alias=grocery">Grocery & Gourmet Foods</option>
+                        <option value="search-alias=hpc">Health & Personal Care</option>
+                        <option value="search-alias=kitchen">Home & Kitchen</option>
+                        <option value="search-alias=industrial">Industrial & Scientific</option>
+                        <option value="search-alias=jewelry">Jewellery</option>
+                        <option value="search-alias=digital-text">Kindle Store</option>
+                        <option value="search-alias=luggage">Luggage & Bags</option>
+                        <option value="search-alias=luxury-beauty">Luxury Beauty</option>
+                        <option value="search-alias=dvd">Movies & TV Shows</option>
+                        <option value="search-alias=digital-music">MP3 Music</option>
+                        <option value="search-alias=popular">Music</option>
+                        <option value="search-alias=mi">Musical Instruments</option>
+                        <option value="search-alias=office-products">Office Products</option>
+                        <option value="search-alias=pets">Pet Supplies</option>
+                        <option value="search-alias=instant-video">Prime Video</option>
+                        <option value="search-alias=shoes">Shoes & Handbags</option>
+                        <option value="search-alias=software">Software</option>
+                        <option value="search-alias=sporting">Sports, Fitness & Outdoors</option>
+                        <option value="search-alias=specialty-aps">Subscribe & Save</option>
+                        <option value="search-alias=home-improvement">Tools & Home Improvement</option>
+                        <option value="search-alias=toys">Toys & Games</option>
+                        <option value="search-alias=under-ten-dollars">Under ₹500</option>
+                        <option value="search-alias=videogames">Video Games</option>
+                        <option value="search-alias=watches">Watches</option>
+                    </select>
+                </div>
+                <input type="text" class="search-input" placeholder="Search Amazon.in">
+                <div class="search-icon-btn">
+                    <img src="{% static "images/search.png" %}" alt="Search" width="20" height="20">
+                </div>
+            </div>
+
+            <div class="nav-item nav-language border-hover">
+                <div class="flag-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/20px-Flag_of_India.svg.png" alt="IN">
+                </div>
+                <span class="text-bold">EN</span>
+                <span class="arrow-down"></span>
+            </div>
+
+            <div class="nav-item nav-account border-hover">
+                <span class="text-light">Hello, sign in</span>
+                <span class="text-bold">Account & Lists <span class="arrow-down"></span></span>
+            </div>
+
+            <div class="nav-item nav-returns border-hover">
+                <span class="text-light">Returns</span>
+                <span class="text-bold">& Orders</span>
+            </div>
+
+            <div class="nav-item nav-cart border-hover">
+                <div class="cart-icon-container">
+                    <span class="cart-count">0</span>
+                    <img src="{% static "images/cart.png" %}" alt="Cart" width="35" height="30">
+                </div>
+                <span class="text-bold cart-text">Cart</span>
+            </div>
+        </nav>
+
+        <nav class="nav-bottom">
+            <div class="nav-item-bottom nav-all border-hover">
+                <img src="{% static "images/hamburger.png" %}" alt="Menu" width="20" height="20">
+                <span class="text-bold">All</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="" class="border-hover">Prime Video</a></li>
+                <li><a href="" class="border-hover">Sell</a></li>
+                <li><a href="" class="border-hover">Bestsellers</a></li>
+                <li><a href="" class="border-hover">Today's Deals</a></li>
+                <li><a href="" class="border-hover">Mobiles</a></li>
+                <li><a href="" class="border-hover">New Releases</a></li>
+                <li><a href="" class="border-hover">Customer Service</a></li>
+                <li><a href="" class="border-hover">Prime <span class="arrow-down"></span></a></li>
+                <li><a href="" class="border-hover">Electronics</a></li>
+                <li><a href="" class="border-hover">Home & Kitchen</a></li>
+                <li><a href="" class="border-hover">Fashion</a></li>
+            </ul>
+            <div class="nav-promo">
+                <div class="promo-placeholder">
+                    <span class="promo-title">Great Indian<br>Festival</span> 
+                    <div class="vertical-line"></div>
+                    <span class="promo-subtitle">Early Deals<br><span style="font-weight:normal">starts in</span></span> 
+                    <div class="timer">
+                        <div class="time-box" id="hours"><b>10</b></div>
+                        <span>:</span>
+                        <div class="time-box" id="minutes">37</div>
+                        <span>:</span>
+                        <div class="time-box" id="seconds">56</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const select = document.querySelector('.search-select');
+            if (select) {
+                const measureSpan = document.createElement('span');
+                measureSpan.style.visibility = 'hidden';
+                measureSpan.style.position = 'absolute';
+                measureSpan.style.whiteSpace = 'pre';
+                
+                const selectStyle = window.getComputedStyle(select);
+                measureSpan.style.fontFamily = selectStyle.fontFamily;
+                measureSpan.style.fontSize = selectStyle.fontSize;
+                measureSpan.style.fontWeight = selectStyle.fontWeight;
+                
+                document.body.appendChild(measureSpan);
+
+                function updateSelectWidth() {
+                    measureSpan.textContent = select.options[select.selectedIndex].text;
+                    const width = measureSpan.offsetWidth + 55; 
+                    select.style.width = width + 'px';
+                }
+
+                select.addEventListener('change', updateSelectWidth);
+                updateSelectWidth();
+            }
+        });
+    </script>
+</body>
+</html>
