@@ -1,1 +1,2 @@
-Djangowhitenoise
+Django
+whitenoise
