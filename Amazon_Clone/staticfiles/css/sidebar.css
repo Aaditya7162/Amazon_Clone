@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.sidebar{
+    display:flex;
+    gap:10px;
+}
+.profile-section{
+    display:flex;
+    gap: 10px;
+    width:400px;
+    background-color: #232F3E;
+    padding:15px;
+    color:white;
+}
+.sign_in_text{
+    font-size:20px;
+}
+.content-section{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    margin-top:20px;
+}
+.sidebar-content{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
