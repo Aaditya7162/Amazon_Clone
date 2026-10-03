@@ -7,11 +7,13 @@
     <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
     <link rel="stylesheet" href="{% static "css/index.css" %}">
     <link rel="icon" type="image/x-icon" href="{% static "images/logo.jpeg" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
     {% include "navbar.html" %}
     {% block content %}
     {% endblock content %}
+    {% include "sidebar.html" %}
     <script src="{% static 'js/timer.js' %}"></script>
 </body>
 </html>
